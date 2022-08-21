@@ -14,7 +14,6 @@
 # LeastPlayers or MostPlayers
 sort: LeastPlayers
 # These servers are skipped when finding for the best servers
-sort: LeastPlayers
 blacklist-servers:
 - test1
 - test2
