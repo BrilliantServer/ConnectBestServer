@@ -24,8 +24,14 @@ object Util {
     fun isFirstJoin(username: String): Boolean {
         ProxyServer.getInstance().reconnectHandler?.save()
 
+        val file = File("locations.yml")
+
+        if (!file.exists()) {
+            return true
+        }
+
         val locations: Configuration =
-            ConfigurationProvider.getProvider(YamlConfiguration::class.java).load(File("locations.yml"))
+            ConfigurationProvider.getProvider(YamlConfiguration::class.java).load(file)
 
         locations.keys.forEach {
             val name = it.split(";").first()
