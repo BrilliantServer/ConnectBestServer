@@ -6,8 +6,8 @@ import engineer.skyouo.plugins.connectbestserver.storage.PluginConfig
 import engineer.skyouo.plugins.connectbestserver.util.Util
 import net.md_5.bungee.api.ProxyServer
 import net.md_5.bungee.api.config.ServerInfo
-import net.md_5.bungee.api.event.PostLoginEvent
 import net.md_5.bungee.api.event.PreLoginEvent
+import net.md_5.bungee.api.event.ServerConnectEvent
 import net.md_5.bungee.api.plugin.Listener
 import net.md_5.bungee.event.EventHandler
 
@@ -28,7 +28,9 @@ class BungeeEventListener : Listener {
     }
 
     @EventHandler
-    fun onPostLogin(event: PostLoginEvent) {
+    fun onPostLogin(event: ServerConnectEvent) {
+        if (event.reason != ServerConnectEvent.Reason.JOIN_PROXY) return
+
         val player = event.player
         val isFirstJoin = firstJoinPlayers.contains(player.name)
         if (isFirstJoin) {
@@ -41,7 +43,7 @@ class BungeeEventListener : Listener {
             }
 
             // If the player is already at the best server, don't move them
-            if (player.server?.info?.name != server.name) {
+            if (event.target.name != server.name) {
                 player.connect(server)
             }
 
