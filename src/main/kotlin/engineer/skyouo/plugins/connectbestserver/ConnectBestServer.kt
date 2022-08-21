@@ -22,8 +22,6 @@ class ConnectBestServer : Plugin() {
     }
 
     override fun onDisable() {
-        PluginConfig.save()
-
         LOGGER.info("ConnectBestServer is disabled")
     }
 }

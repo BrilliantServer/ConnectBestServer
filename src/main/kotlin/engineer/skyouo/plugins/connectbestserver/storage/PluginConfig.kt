@@ -42,7 +42,7 @@ object PluginConfig {
         save()
     }
 
-    fun save() {
+    private fun save() {
         provider.save(configuration, file)
     }
 }
