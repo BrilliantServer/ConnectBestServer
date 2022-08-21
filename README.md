@@ -14,7 +14,10 @@
 # LeastPlayers or MostPlayers
 sort: LeastPlayers
 # These servers are skipped when finding for the best servers
-blacklist-servers: [ "waitroom1,waitroom2" ]
+sort: LeastPlayers
+blacklist-servers:
+- test1
+- test2
 ```
 
 ## 📃 License | 開源授權
