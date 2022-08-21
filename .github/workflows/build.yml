@@ -37,5 +37,5 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: Brilliant-Anti-Bot
+          name: Connect-Best-Server
           path: ${{ github.workspace }}/build/libs

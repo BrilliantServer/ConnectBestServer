@@ -1,1 +1,1 @@
-rootProject.name = "BrilliantAntiBot"
+rootProject.name = "ConnectBestServer"

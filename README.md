@@ -1,9 +1,9 @@
-# Brilliant-Anti-Bot
+# Connect-Best-Server
 
 ---
 [Made for Brilliantw Server](https://discord.gg/5MHGpAFGEN "The Copyright of the entire source codes is owned by SiongSng according to Article 10 the Copyright Law of the Republic of China.")  
 
-輝煌伺服器用來防止玩家在短時間內大量登入的插件
+輝煌伺服器中用來自動連線最少人的分流 (Bungeecord 插件)
 
 ## 📃 License | 開源授權
 

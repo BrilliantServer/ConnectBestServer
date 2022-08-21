@@ -1,6 +1,6 @@
-package engineer.skyouo.plugins.brilliantantibot.storage
+package engineer.skyouo.plugins.connectbestserver.storage
 
-import engineer.skyouo.plugins.brilliantantibot.util.Util
+import engineer.skyouo.plugins.connectbestserver.util.Util
 import net.md_5.bungee.config.Configuration
 import net.md_5.bungee.config.ConfigurationProvider
 import net.md_5.bungee.config.YamlConfiguration
@@ -12,12 +12,16 @@ object PluginConfig {
     private lateinit var provider: ConfigurationProvider
 
     /**
-     * The time limit for the same player to connect repeatedly.
-     * Example: set the value to 10, i.e. the player can't connect to the server repeatedly within 10 seconds
+     * Which sort type to use to connect to the best server
      */
-    val rateLimit: Int
-        get() = configuration.getInt("rate_limit", 10)
+    val sort: BestServerSort
+        get() = BestServerSort.valueOf(configuration.getString("sort", BestServerSort.LeastPlayers.name))
 
+    /**
+     *
+     */
+    val blacklistServers: MutableList<String>
+        get() = configuration.getStringList("blacklist-servers")
 
     fun init() {
         file = Util.getFileLocation("config.yml")
@@ -28,8 +32,11 @@ object PluginConfig {
         provider = ConfigurationProvider.getProvider(YamlConfiguration::class.java)
         configuration = provider.load(file)
 
-        if (!configuration.contains("rate_limit")) {
-            configuration.set("rate_limit", 10)
+        if (!configuration.contains("sort")) {
+            configuration.set("sort", BestServerSort.LeastPlayers.name)
+        }
+        if (!configuration.contains("blacklist-servers")) {
+            configuration.set("blacklist-servers", mutableListOf<String>())
         }
 
         save()
