@@ -22,7 +22,8 @@ object Util {
 
     // The player is first join the server
     fun isFirstJoin(username: String): Boolean {
-        ProxyServer.getInstance().reconnectHandler.save()
+        ProxyServer.getInstance().reconnectHandler?.save()
+
         val locations: Configuration =
             ConfigurationProvider.getProvider(YamlConfiguration::class.java).load(File("locations.yml"))
 
