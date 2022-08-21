@@ -6,7 +6,6 @@ import engineer.skyouo.plugins.connectbestserver.storage.PluginConfig
 import engineer.skyouo.plugins.connectbestserver.util.Util
 import net.md_5.bungee.api.ProxyServer
 import net.md_5.bungee.api.config.ServerInfo
-import net.md_5.bungee.api.event.PlayerDisconnectEvent
 import net.md_5.bungee.api.event.PostLoginEvent
 import net.md_5.bungee.api.event.PreLoginEvent
 import net.md_5.bungee.api.plugin.Listener
@@ -48,9 +47,5 @@ class BungeeEventListener : Listener {
 
             firstJoinPlayers.remove(player.name)
         }
-    }
-
-    @EventHandler
-    fun onPlayerDisconnect(event: PlayerDisconnectEvent) {
     }
 }
