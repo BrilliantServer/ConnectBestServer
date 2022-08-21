@@ -16,10 +16,7 @@ object PluginConfig {
      */
     val sort: BestServerSort
         get() = BestServerSort.valueOf(configuration.getString("sort", BestServerSort.LeastPlayers.name))
-
-    /**
-     *
-     */
+    
     val blacklistServers: MutableList<String>
         get() = configuration.getStringList("blacklist-servers")
 
