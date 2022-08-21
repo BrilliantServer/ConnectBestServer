@@ -1,9 +1,21 @@
 # Connect-Best-Server
 
 ---
-[Made for Brilliantw Server](https://discord.gg/5MHGpAFGEN "The Copyright of the entire source codes is owned by SiongSng according to Article 10 the Copyright Law of the Republic of China.")  
+[Made for Brilliantw Server](https://discord.gg/5MHGpAFGEN "The Copyright of the entire source codes is owned by SiongSng according to Article 10 the Copyright Law of the Republic of China.")
 
 輝煌伺服器中用來自動連線最少人的分流 (Bungeecord 插件)
+
+## Usage | 使用
+
+### Config
+
+```yaml
+# Which sort type to use to connect to the best server
+# LeastPlayers or MostPlayers
+sort: LeastPlayers
+# These servers are skipped when finding for the best servers
+blacklist-servers: [ "waitroom" ]
+```
 
 ## 📃 License | 開源授權
 
