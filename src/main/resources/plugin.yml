@@ -1,6 +1,6 @@
 name: ConnectBestServer
 version: '${version}'
-main: engineer.skyouo.plugins.connectbestserver.ConnectBestServer
+main: tw.brilliant.server.plugins.connectbestserver.ConnectBestServer
 api-version: 1.19
 authors: [ SiongSng ]
 description: Automatically connect to the best server in bungeecord.

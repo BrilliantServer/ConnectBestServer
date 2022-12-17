@@ -1,4 +1,4 @@
-package engineer.skyouo.plugins.connectbestserver.storage
+package tw.brilliant.server.plugins.connectbestserver.storage
 
 enum class BestServerSort {
     MostPlayers,

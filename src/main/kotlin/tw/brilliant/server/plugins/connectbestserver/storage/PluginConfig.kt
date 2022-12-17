@@ -1,6 +1,6 @@
-package engineer.skyouo.plugins.connectbestserver.storage
+package tw.brilliant.server.plugins.connectbestserver.storage
 
-import engineer.skyouo.plugins.connectbestserver.util.Util
+import tw.brilliant.server.plugins.connectbestserver.util.Util
 import net.md_5.bungee.config.Configuration
 import net.md_5.bungee.config.ConfigurationProvider
 import net.md_5.bungee.config.YamlConfiguration

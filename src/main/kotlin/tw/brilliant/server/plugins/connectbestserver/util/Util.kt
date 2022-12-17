@@ -1,4 +1,4 @@
-package engineer.skyouo.plugins.connectbestserver.util
+package tw.brilliant.server.plugins.connectbestserver.util
 
 import java.io.File
 

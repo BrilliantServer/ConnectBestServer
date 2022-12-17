@@ -1,7 +1,7 @@
-package engineer.skyouo.plugins.connectbestserver
+package tw.brilliant.server.plugins.connectbestserver
 
-import engineer.skyouo.plugins.connectbestserver.event.BungeeEventListener
-import engineer.skyouo.plugins.connectbestserver.storage.PluginConfig
+import tw.brilliant.server.plugins.connectbestserver.event.BungeeEventListener
+import tw.brilliant.server.plugins.connectbestserver.storage.PluginConfig
 import net.md_5.bungee.api.plugin.Plugin
 import java.util.logging.Logger
 

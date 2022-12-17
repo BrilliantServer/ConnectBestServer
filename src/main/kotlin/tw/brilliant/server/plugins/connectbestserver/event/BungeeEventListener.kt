@@ -1,9 +1,9 @@
-package engineer.skyouo.plugins.connectbestserver.event
+package tw.brilliant.server.plugins.connectbestserver.event
 
-import engineer.skyouo.plugins.connectbestserver.ConnectBestServer
-import engineer.skyouo.plugins.connectbestserver.storage.BestServerSort.LeastPlayers
-import engineer.skyouo.plugins.connectbestserver.storage.BestServerSort.MostPlayers
-import engineer.skyouo.plugins.connectbestserver.storage.PluginConfig
+import tw.brilliant.server.plugins.connectbestserver.ConnectBestServer
+import tw.brilliant.server.plugins.connectbestserver.storage.BestServerSort.LeastPlayers
+import tw.brilliant.server.plugins.connectbestserver.storage.BestServerSort.MostPlayers
+import tw.brilliant.server.plugins.connectbestserver.storage.PluginConfig
 import net.md_5.bungee.api.ProxyServer
 import net.md_5.bungee.api.config.ServerInfo
 import net.md_5.bungee.api.connection.ProxiedPlayer
