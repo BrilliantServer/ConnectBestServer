@@ -3,5 +3,5 @@ version: '${version}'
 main: engineer.skyouo.plugins.connectbestserver.ConnectBestServer
 api-version: 1.19
 authors: [ SiongSng ]
-description: 輝煌伺服器中用來自動連線最少人的分流 (Bungeecord 插件)
+description: Automatically connect to the best server in bungeecord.
 website: brilliantw.net

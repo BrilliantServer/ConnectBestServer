@@ -29,6 +29,7 @@ dependencies {
 //  implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")?.let { bundle(it) }
 
     compileOnly("net.md-5:bungeecord-api:${project.property("bungeecord_version")}")
+    compileOnly("net.md-5:bungeecord-module-reconnect-yaml:1.7-SNAPSHOT")
 }
 
 val targetJavaVersion = 17
@@ -86,8 +87,6 @@ tasks {
         // https://ci.md-5.net/job/BungeeCord/
         jarUrl.set("https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar")
         agreeEula.set(true)
-        // IDEA console input
-        jvmArgument.set(arrayListOf("-Deditable.java.test.console=true"))
     }
 
     task("reloadPluginJar") {
@@ -95,7 +94,7 @@ tasks {
         doFirst {
             copy {
                 from(buildDir.resolve("libs/${project.property("plugin_name")}-$version.jar"))
-                into(buildDir.resolve("MinecraftServer/plugins"))
+                into(buildDir.resolve("BungeecordServer/plugins"))
             }
         }
     }

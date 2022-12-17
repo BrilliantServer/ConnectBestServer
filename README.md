@@ -1,11 +1,11 @@
 # Connect-Best-Server
 
 ---
-[Made for Brilliant Team](https://discord.gg/5MHGpAFGEN "The Copyright of the entire source codes is owned by SiongSng according to Article 10 the Copyright Law of the Republic of China.")
+[Made by Brilliant Team](https://discord.gg/5MHGpAFGEN "The Copyright of the entire source codes is owned by SiongSng according to Article 10 the Copyright Law of the Republic of China.")
 
-輝煌伺服器中用來自動連線最少人的分流 (Bungeecord 插件)
+Automatically connect to the best server in bungeecord.
 
-## Usage | 使用
+## Usage
 
 ### Config
 
@@ -19,12 +19,11 @@ blacklist-servers:
 - test2
 ```
 
-## 📃 License | 開源授權
+## 📃 License
 
 This project is licensed under the GNU GPL V3.0  
-此專案在 GNU GPL V3.0 下授權
 
-## 🔴 Development | 開發
+## 🔴 Development
 
 ### Build
 
@@ -39,9 +38,12 @@ File location: `build/libs/...`
 ```shell
 ./gradle buildAndLaunchServer
 ```
+### Launch BungeeCord Server
 
-## 🟠 Precautions | 注意事項
+```shell
+./gradle buildAndLaunchBungeecordServer
+```
+
+## 🟠 Note
 
 The plugin requires BungeeCord
-
-本插件需要 BungeeCord 才能運作
