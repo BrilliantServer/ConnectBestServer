@@ -1,4 +1,4 @@
-# Connect-Best-Server
+# Connect-Best-Server.
 
 ---
 [Made by Brilliant Team](https://discord.gg/5MHGpAFGEN "The Copyright of the entire source codes is owned by SiongSng according to Article 10 the Copyright Law of the Republic of China.")
